@@ -1,0 +1,68 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  color: white !important;
+}
+.footer{
+  height:80px !important;
+}
+
+/* hero banner */
+.banner{
+  height:72vh !important;
+  width: 100vw !important;
+}
+
+/* product page */
+.products1{
+  display: flex;
+  justify-content: space-evenly;
+}
+.product-card{
+  width: 21rem;
+
+  img{
+    height: 300px;
+  }
+}
+.product-card:hover{
+  opacity: 0.8;
+  width: 21.5rem;
+  cursor: pointer;
+}
+
+.product-image {
+  max-height: 400px;
+  object-fit: cover;
+  width: 560px;
+}
+.thumbnail {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+.thumbnail:hover, .thumbnail.active {
+  opacity: 1;
+}
+
+.reviews{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.review{
+  h5{
+    color:rgb(0, 132, 248);
+  }
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+
