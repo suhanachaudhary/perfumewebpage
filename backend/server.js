@@ -8,9 +8,12 @@ const bodyParser = require('body-parser');
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
+require('dotenv').config();
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://suhanachaudhary212:LHUQTrYZRnd9piaq@cluster0.t385e.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
+const mongoURI = process.env.MONGO_URL;
+
+mongoose.connect(mongoURI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 }).then(()=>{
